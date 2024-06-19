@@ -4,22 +4,26 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    transition: background-color 0.3s ease-in-out;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
 }
 
 header {
-    background: linear-gradient(90deg, #333, #555);
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
     color: #fff;
     padding: 1rem 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5rem;
     letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 nav ul {
@@ -39,20 +43,26 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
-    transition: color 0.3s ease-in-out;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    color: #ff9800;
+    color: #4e54c8;
+    background-color: #fff;
 }
 
 section {
-    padding: 2rem;
+    padding: 4rem 2rem;
     margin: 2rem 0;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section:hover {
@@ -64,15 +74,25 @@ h2 {
     margin-top: 0;
     font-size: 2rem;
     text-align: center;
+    color: #4e54c8;
 }
 
 .project {
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project img {
     max-width: 100%;
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project img:hover {
+    transform: scale(1.05);
 }
 
 .project h3 {
@@ -82,21 +102,23 @@ h2 {
 
 .project p {
     font-size: 1rem;
+    text-align: center;
 }
 
 .project a {
     display: inline-block;
     margin-top: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: #333;
+    background-color: #4e54c8;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .project a:hover {
-    background-color: #ff9800;
+    background-color: #8f94fb;
+    transform: translateY(-3px);
 }
 
 form {
@@ -110,7 +132,7 @@ form label {
 
 form input,
 form textarea {
-    padding: 0.5rem;
+    padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -118,13 +140,13 @@ form textarea {
 
 form input:focus,
 form textarea:focus {
-    border-color: #ff9800;
-    box-shadow: 0 0 5px rgba(255, 152, 0, 0.5);
+    border-color: #4e54c8;
+    box-shadow: 0 0 5px rgba(78, 84, 200, 0.5);
 }
 
 form button {
-    padding: 0.5rem 1rem;
-    background: #333;
+    padding: 0.75rem 1.5rem;
+    background: #4e54c8;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -133,17 +155,19 @@ form button {
 }
 
 form button:hover {
-    background: #ff9800;
+    background: #8f94fb;
     transform: translateY(-3px);
 }
 
 footer {
     text-align: center;
     padding: 1rem 0;
-    background: #333;
+    background: #4e54c8;
     color: #fff;
 }
 
 footer p {
     margin: 0;
 }
+
+
