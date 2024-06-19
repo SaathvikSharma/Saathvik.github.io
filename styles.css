@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* New gradient colors */
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -49,7 +49,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #4e54c8;
+    color: #ff7e5f;
     background-color: #fff;
 }
 
@@ -74,7 +74,7 @@ h2 {
     margin-top: 0;
     font-size: 2rem;
     text-align: center;
-    color: #4e54c8;
+    color: #ff7e5f;
 }
 
 .project {
@@ -109,7 +109,7 @@ h2 {
     display: inline-block;
     margin-top: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: #4e54c8;
+    background-color: #ff7e5f;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
@@ -117,7 +117,7 @@ h2 {
 }
 
 .project a:hover {
-    background-color: #8f94fb;
+    background-color: #feb47b;
     transform: translateY(-3px);
 }
 
@@ -140,13 +140,13 @@ form textarea {
 
 form input:focus,
 form textarea:focus {
-    border-color: #4e54c8;
-    box-shadow: 0 0 5px rgba(78, 84, 200, 0.5);
+    border-color: #ff7e5f;
+    box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
 }
 
 form button {
     padding: 0.75rem 1.5rem;
-    background: #4e54c8;
+    background: #ff7e5f;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -155,14 +155,14 @@ form button {
 }
 
 form button:hover {
-    background: #8f94fb;
+    background: #feb47b;
     transform: translateY(-3px);
 }
 
 footer {
     text-align: center;
     padding: 1rem 0;
-    background: #4e54c8;
+    background: #ff7e5f;
     color: #fff;
 }
 
@@ -170,4 +170,16 @@ footer p {
     margin: 0;
 }
 
+.about-me {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
 
+.about-me img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
