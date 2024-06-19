@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Lato', sans-serif; /* Changed font to 'Lato' */
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* New gradient colors */
+    background: linear-gradient(90deg, #333333, #555555); /* Darker gradient colors */
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -49,7 +49,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff7e5f;
+    color: #333333;
     background-color: #fff;
 }
 
@@ -74,7 +74,7 @@ h2 {
     margin-top: 0;
     font-size: 2rem;
     text-align: center;
-    color: #ff7e5f;
+    color: #333333;
 }
 
 .project {
@@ -85,7 +85,7 @@ h2 {
 }
 
 .project img {
-    max-width: 100%;
+    max-width: 90%; /* Reduced image size */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
@@ -109,7 +109,7 @@ h2 {
     display: inline-block;
     margin-top: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: #ff7e5f;
+    background-color: #333333;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
@@ -117,13 +117,15 @@ h2 {
 }
 
 .project a:hover {
-    background-color: #feb47b;
+    background-color: #555555;
     transform: translateY(-3px);
 }
 
 form {
     display: grid;
     gap: 1rem;
+    max-height: 300px; /* Reduced height for compactness */
+    overflow-y: auto; /* Scrollable form */
 }
 
 form label {
@@ -140,13 +142,13 @@ form textarea {
 
 form input:focus,
 form textarea:focus {
-    border-color: #ff7e5f;
-    box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
+    border-color: #333333;
+    box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
 }
 
 form button {
     padding: 0.75rem 1.5rem;
-    background: #ff7e5f;
+    background: #333333;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -155,14 +157,14 @@ form button {
 }
 
 form button:hover {
-    background: #feb47b;
+    background: #555555;
     transform: translateY(-3px);
 }
 
 footer {
     text-align: center;
     padding: 1rem 0;
-    background: #ff7e5f;
+    background: #333333;
     color: #fff;
 }
 
